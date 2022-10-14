@@ -25,11 +25,24 @@ body {
 }
 
 .white-content {
-	background: #fff5db;
+	background: white;
 	color: black;
 	a {
 		text-decoration: none;
 		color: black;
+	}
+}
+
+.lightingMode {
+	position: absolute;
+	right: 0%;
+	margin: 2rem;
+	> .MuiSvgIcon-root {
+		font-size: 40px;
+		color: #D3ADDC;
+	}
+	:hover {
+		color: rgb(243, 227, 109);
 	}
 }
 
