@@ -1,36 +1,34 @@
 import React from 'react'
-import '../styles/style.scss'
+import '../styles/navbar.scss'
 import { NavLink } from "react-router-dom"
 
 function NavBar() {
 
 	return (
-		<section>
-			<div className="navbar">
-				<div className='bubble'>
+		<section className='navbar'>
+			<div className='bubble'>
 				<NavLink
 					to="/about"
-					className={( {isActive} ) => (isActive ? 'bubble active' : 'bubble inactive')}
+					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
-					about
+					ABOUT
 				</NavLink>
-				</div>
-				<div className='bubble'>
+			</div>
+			<div className='bubble'>
 				<NavLink
 					to="/skills"
-					className={( {isActive} ) => (isActive ? 'bubble active' : 'bubble inactive')}
+					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
-				skills
+					SKILLS
 				</NavLink>
-				</div>
-				<div className='bubble'>
+			</div>
+			<div className='bubble'>
 				<NavLink
 					to="/work"
-					className={( {isActive} ) => (isActive ? 'bubble active' : 'bubble inactive')}
+					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
-					work
+					WORK
 				</NavLink>
-				</div>
 			</div>
 		</section>
 	)
