@@ -16,18 +16,18 @@ function NavBar() {
 			</div>
 			<div className='bubble'>
 				<NavLink
-					to="/skills"
-					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
-				>
-					SKILLS
-				</NavLink>
-			</div>
-			<div className='bubble'>
-				<NavLink
 					to="/work"
 					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
 					WORK
+				</NavLink>
+			</div>
+			<div className='bubble'>
+				<NavLink
+					to="/Contact"
+					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
+				>
+					CONTACT
 				</NavLink>
 			</div>
 		</section>

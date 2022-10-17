@@ -9,6 +9,7 @@ section.about {
 	> h1 {
 		text-align: left;
 		padding-bottom: 10px;
+		text-transform: uppercase;
 		border-bottom: 0.1px solid white;
 	}
 	> p {
@@ -28,5 +29,8 @@ section.about {
 		> a {
 			text-decoration: none;
 		}
+		:hover {
+			font-size: 21px;
+		};
 	}
 }
