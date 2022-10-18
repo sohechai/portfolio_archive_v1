@@ -16,7 +16,6 @@ body {
 	right:0;
 	left:0;
 	background: #2c2f33;
-	// background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgb(68, 63, 63) 50%, rgba(34,34,34,1) 100%);
 	background-size: cover;
 	background-position: center;
 	letter-spacing: 4px;
@@ -42,7 +41,7 @@ section.container {
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	width: 100rem;
+	width: 90%;
 	height: auto;
 	margin: auto;
 }
@@ -63,18 +62,17 @@ section.header {
 	display: flex;
 	width: 100%;
 	height: 100px;
-
+	padding: 2%;
 	.logo {
 		position: fixed;
 		width: 40px;
 		height: auto;
-		margin-top: 2rem;
 	}
 
 	.lightingMode {
+		display: none;
 		position: fixed;
 		right: 5%;
-		margin-top: 2rem;
 		> .MuiSvgIcon-root {
 			font-size: 40px;
 			color: #D3ADDC;
@@ -88,8 +86,8 @@ section.header {
 section.home {
 	position: relative;
 	display: block;
-	width: 50%;
-	height: 90%;
+	width: 40rem;
+	justify-content: center;
 	flex-direction: column;
 	padding: 0;
 	margin: auto;
@@ -158,23 +156,35 @@ section.home {
 }
 
 section.footerContainer {
-	display: flex;
 	position: fixed;
-	right: 0%;
-	bottom: 5%;
-	margin: auto;
-	width: 25%;
-	height: .5px;
-	align-items: center;
-	background-color: #D3ADDC;
+	display: flex;
+	justify-content: center;
+	right: 1%;
+	bottom: 40%;
+	width: 5%;
+	height: 30%;
 	.footIcons {
-		position: absolute;
-		right: 0%;
+		display: block;
+		justify-content: center;
+		text-align: center;
+		.line {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin: auto;
+			bottom: 0;
+			width: .5px;
+			height: 30%;
+			background-color: pink;
+		}
+		
 		> a > .MuiSvgIcon-root {
 			border-radius: 50%;
-			padding: 15px;
+			padding: 10px;
 			border: solid .5px #D3ADDC;
-			margin-right: 50px;
+			margin: 10px;
 			font-size: 25px;
 			color: #D3ADDC;
 			background-color: #2c2f33;

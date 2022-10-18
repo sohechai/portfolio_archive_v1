@@ -1,12 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/contact.scss'
 
 function Contact() {
+	const [status, setStatus] = useState("Submit");
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		setStatus("Sending...");
+		const { name, email, message } = e.target.elements;
+		let details = {
+			name: name.value,
+			email: email.value,
+			message: message.value,
+		};
+
+		//   let response = await fetch("http://localhost:5000/contact", {
+		// 	method: "POST",
+		// 	headers: {
+		// 	  "Content-Type": "application/json;charset=utf-8",
+		// 	},
+		// 	body: JSON.stringify(details),
+		//   });
+		setStatus("Submit");
+		// let result = await response.json();
+		// alert(result.status);
+	};
 	return (
 		<section className='contactContainer'>
-			<h1>CONTACTS</h1>
-			<p>EMAIL: sofia.hechaichi@gmail.com</p>
-			<p>PHONE NUMBER: 06 10 39 63 07</p>
+			<h1>CONTACT ME</h1>
+			<form onSubmit={handleSubmit}>
+				<div className='formDiv'>
+					<label htmlFor="name" />
+					<input placeholder='Name' type="text" id="name" required />
+				</div>
+				<div className='formDiv'>
+					<label htmlFor="email" />
+					<input placeholder='Email' type="email" id="email" required />
+				</div>
+				<div className='formDiv'>
+					<label htmlFor="message" />
+					<textarea placeholder='Message' id="message" required />
+				</div>
+				<button type="submit">send</button>
+			</form>
 		</section>
 	)
 }

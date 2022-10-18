@@ -9,6 +9,7 @@ function Footer() {
 	return (
 		<section className='footerContainer'>
 			<div className='footIcons'>
+				<div className='line' />
 				<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" rel="noreferrer">
 					<LinkedInIcon />
 				</a>
@@ -18,6 +19,7 @@ function Footer() {
 				<NavLink to="/Contact">
 					<MailIcon />
 				</NavLink>
+				<div className='line' />
 			</div>
 		</section>
 	)

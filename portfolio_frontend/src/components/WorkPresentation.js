@@ -13,10 +13,10 @@ function WorkPresentation({ image, description, abilities }) {
 						<h1>{item}</h1> )
 				}
 			</div>
+			<p>{description}</p>
 			<a href="https://google.com" target="_blank" rel="noreferrer">
 				<p>view website</p>
 			</a>
-			<p>{description}</p>
 		</div>
 	)
 }

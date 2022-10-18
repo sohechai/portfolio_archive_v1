@@ -10,15 +10,18 @@ section.workContainer {
 		border-bottom: 0.1px solid white;
 	}
 	.workSquares {
-		padding: 5rem;
+		// padding: 5rem;
+		display: block;
+		text-align: center;
 		justify-content: center;
 		align-items: center;
-		columns: 3;
-		column-gap: 15px;
+		columns: 3 auto;
+		column-gap: 15%;
 		width: 100%;
 	}
 
 	.workPresentation {
+		text-align: center;
 		position: relative;
 		display: inline-block;
 		justify-content: center;
@@ -27,13 +30,12 @@ section.workContainer {
 		height: 500px;
 		> a > p {
 			display: inline-flex;
-			text-align: center;
 			align-items: center;
 			justify-content: center;
 			border: solid .5px #D3ADDC;
 			border-radius: 30px;
-			padding: 10px 20px;
-			margin: auto;
+			padding: 5px 10px 5px 10px;
+			margin-top: 5px;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
 		}
 		 img {
@@ -43,23 +45,35 @@ section.workContainer {
 			
 		}
 		>p {
-			text-align: left;
 			font-style: italic;
 			font-size: 15px;
 		}
 
 		.abilities {
 			display: flex;
+			align-items: center;
 			color: white;
 			> h1 {
+				display: flex;
+				align-items: center;
+				&::before {
+					content: '';
+					margin-right: 5px;
+					display: inline-flex;
+					justify-content: center;
+					width: 15px;
+					height: 15px;
+					background-color: lightgray;
+					border-radius: 50%;
+				}
+				align-items: center;
 				text-align: center;
+				letter-spacing: 1px;
 				font-size: 14px;
+				margin: 3px 0 10px 0;
 				margin-right: 10px;
-				background-color: #2cc8f4;
-				border-radius: 5px;
-				padding: 5px;
 			}
-
+			
 		}
 	}
 
