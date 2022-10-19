@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/contact.scss'
+import axios from 'axios';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Contact() {
-	const [status, setStatus] = useState("Submit");
-
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		setStatus("Sending...");
 		const { name, email, message } = e.target.elements;
 		let details = {
 			name: name.value,
@@ -14,19 +13,36 @@ function Contact() {
 			message: message.value,
 		};
 
-		//   let response = await fetch("http://localhost:5000/contact", {
-		// 	method: "POST",
-		// 	headers: {
-		// 	  "Content-Type": "application/json;charset=utf-8",
-		// 	},
-		// 	body: JSON.stringify(details),
-		//   });
-		setStatus("Submit");
-		// let result = await response.json();
-		// alert(result.status);
+		axios.post('http://localhost:4000/mail/send-email', { name: details.name, email: details.email, message: details.message })
+			.then((res) =>
+				toast("message sent, thank you !",
+					{
+						icon: '✅',
+						style: {
+							borderRadius: '10px',
+							background: '#333',
+							color: '#fff',
+						},
+					}
+				)
+			)
+			.catch((error) =>
+				toast("error, please check your email address.",
+					{
+						icon: '❌',
+						style: {
+							borderRadius: '10px',
+							background: '#333',
+							color: '#fff',
+						},
+					}
+				)
+			);
 	};
+
 	return (
 		<section className='contactContainer'>
+			<Toaster />
 			<h1>CONTACT ME</h1>
 			<form onSubmit={handleSubmit}>
 				<div className='formDiv'>
