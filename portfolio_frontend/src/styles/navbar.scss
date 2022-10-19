@@ -1,34 +1,35 @@
 section.navbar {
-	position: fixed;
+	position: relative;
 	display: flex;
-	flex-direction: column;
-	height: 30vh;
-	width: 7vw;
-	margin-top: 20vh;
+	align-items: center;
 	justify-content: space-around;
-	text-decoration: none;
-	font-size: x-large;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+	font-size: medium;
+	flex-direction: row;
 	.bubble {
 		display: flex;
-		width: 200px;
+		width: 50%;
 		height: 70px;
 		margin-bottom: 10px;
 		align-items: center;
 		text-align: left;
-		text-decoration: none;	
-		&.active {
-			background-image: linear-gradient(to right, rgba(211, 173, 220, .3), transparent);
-		}	
-		a::before {
-			content: '';
-			width: 4px;
-			overflow: hidden;
-			height: 100%;
-			margin-right: 20px;
-			background-color: white;
-			filter:drop-shadow(7px -12px 50px #D3ADDC);
-			transition: .5s;
+		text-decoration: none;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		@media (max-width: 1280px) {
+			width: 30vw;
 		}
+		&.active {
+				background-color: rgba(211, 173, 220, .1);
+				background-image: none;
+				border-radius: 30px;
+		}	
 		a:hover::before{
 			width:10px;
 			filter:drop-shadow(7px -12px 50px #D3ADDC);

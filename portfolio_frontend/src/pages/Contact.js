@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/contact.scss'
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
+import Footer from '../components/Footer';
 
 function Contact() {
 	const handleSubmit = async (e) => {
@@ -59,6 +60,7 @@ function Contact() {
 				</div>
 				<button type="submit">send</button>
 			</form>
+			<Footer />
 		</section>
 	)
 }

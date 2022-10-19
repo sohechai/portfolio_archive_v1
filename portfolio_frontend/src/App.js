@@ -9,7 +9,6 @@ import { useState } from 'react';
 import { ThemeContext, themes } from './components/contexts/themeContext';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import Footer from './components/Footer';
 import Contact from './pages/Contact';
 
 function App() {
@@ -49,8 +48,11 @@ function App() {
 				<Route path="work" element={<Work />} />
 				<Route path="contact" element={<Contact />} />
 			</Routes>
+			<div className='signature'>
+			<p>designed and develop by Sofia Hechaïchi with ReactJS.</p>
+			<p>Copyright &#169; 2022 SH</p>
+			</div>
 			</section>
-			<Footer />
 			</section>
 		</BrowserRouter>
 	);

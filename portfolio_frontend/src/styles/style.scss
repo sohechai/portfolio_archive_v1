@@ -38,11 +38,13 @@ a {
 }
 
 section.container {
-	position: relative;
+	position: absolute;
+	display: block;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
-	height: auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 }
 
@@ -50,23 +52,32 @@ section.pageContents {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	left: 10rem;
-	width: 80vw;
+	text-align: center;
+	width: 90%;
 	height: 70vh;
 	margin: auto;
+	@media (max-width: 1280px) {
+		left: 0;
+		margin: auto;
+		width: 100%;
+	}
 }
 
 section.header {
 	position: relative;
 	display: flex;
-	width: 100%;
-	height: 100px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
 	padding: 2%;
 	.logo {
-		position: fixed;
 		width: 40px;
 		height: auto;
+		@media (max-width: 1280px) {
+			width: 30px;
+			height: auto;
+		}
 	}
 
 	.lightingMode {
@@ -85,12 +96,16 @@ section.header {
 
 section.home {
 	position: relative;
-	display: block;
-	width: 40rem;
+	display: flex;
+	width: 70%;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	padding: 0;
 	margin: auto;
+	@media (max-width: 1280px) {
+		width: 90%;
+	}
 	.text {
 		display: inline-block;
 		text-align: left;
@@ -98,6 +113,9 @@ section.home {
 		> h1 {
 			font-weight: 30;
 			font-size: 1.6rem;
+			@media (max-width: 1280px) {
+				font-size: medium;
+			}
 		}
 		> h1.typewrite-effect {
 			font-weight: 20;
@@ -121,6 +139,11 @@ section.home {
 	.hello {
 		justify-content: center;
 		align-items: center;
+		@media (max-width: 1280px) {
+			width: 80%;
+			justify-content: center;
+			align-items: center;
+		}
 		.box {
 			display: flex;
 			align-items: center;
@@ -128,6 +151,9 @@ section.home {
 			height: 30px;
 			margin-bottom: 10px;
 			border: 1px solid #D3ADDC;
+			@media (max-width: 1280px) {
+				width: 100%;
+			}
 			&::before {
 				content: '';
 				width: 4px;
@@ -138,6 +164,9 @@ section.home {
 			> h1 {
 				font-size: 20px;
 				margin-left: 20px;
+				@media (max-width: 1280px) {
+					font-size: medium;
+				}
 			}
 		}
 		.videoContainer {
@@ -146,6 +175,10 @@ section.home {
 			margin-top: 10px;
 			width: 40rem;
 			height: 23rem;
+			@media (max-width: 1280px) {
+				width: 100%;
+				height: auto;
+			}
 			> video {
 				width: calc(100% - 10px);
 				height: calc(100% - 10px);
@@ -156,17 +189,21 @@ section.home {
 }
 
 section.footerContainer {
-	position: fixed;
 	display: flex;
 	justify-content: center;
-	right: 1%;
-	bottom: 40%;
-	width: 5%;
-	height: 30%;
+	margin: auto;
+	margin-top: 20px;
+	width: 60%;
+	height: 10%;
 	.footIcons {
+		> h1 {
+			font-size: x-large;
+			margin-bottom: 10px;
+		}
 		display: block;
-		justify-content: center;
+		justify-content: end;
 		text-align: center;
+		align-items: center;
 		.line {
 			position: relative;
 			display: flex;
@@ -183,11 +220,30 @@ section.footerContainer {
 		> a > .MuiSvgIcon-root {
 			border-radius: 50%;
 			padding: 10px;
-			border: solid .5px #D3ADDC;
+			border: solid .5px white;
 			margin: 10px;
-			font-size: 25px;
-			color: #D3ADDC;
-			background-color: #2c2f33;
+			font-size: 30px;
+			color: white;
 		}
+	}
+}
+
+.signature {
+	position: fixed;
+	display: inline;
+	bottom: 0px;
+	height: auto;
+	width: 100%;
+	font-size: 15px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(211, 173, 220, .3);
+	@media (max-width: 1280px) {
+		font-size: 11px;
+	}
+	> p {
+		padding: 0;
+		margin: 0;
 	}
 }

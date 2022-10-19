@@ -12,10 +12,6 @@ function Work() {
 			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react" />
 			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
 			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
-			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
-			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
-			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
-
 		</div>
 	</section>
   )
