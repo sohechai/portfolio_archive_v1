@@ -36,10 +36,9 @@ section.contactContainer {
 	}
 	.formDiv {
 		display: flex;
-		text-align: left;
-		// justify-content: center;
+		text-align: center;
+		justify-content: center;
 		padding: 20px;
-		// background-color: red;
 		> h1 {
 			margin-bottom: 5px;
 			display: block;
@@ -51,7 +50,7 @@ section.contactContainer {
 			font-family: 'Open sans';
 			font-size: 18px;
 			color: white;
-			width: 50%;
+			width: 95%;
 			height: 20px;
 			border: 0;
 			outline: 0;

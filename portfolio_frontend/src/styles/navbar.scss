@@ -17,7 +17,7 @@ section.navbar {
 		text-align: left;
 		text-decoration: none;	
 		&.active {
-			background-image: linear-gradient(to right, rgba(211, 173, 220, .5), transparent);
+			background-image: linear-gradient(to right, rgba(211, 173, 220, .3), transparent);
 		}	
 		a::before {
 			content: '';
@@ -26,12 +26,12 @@ section.navbar {
 			height: 100%;
 			margin-right: 20px;
 			background-color: white;
-			filter:drop-shadow(7px -12px 50px pink);
+			filter:drop-shadow(7px -12px 50px #D3ADDC);
 			transition: .5s;
 		}
 		a:hover::before{
 			width:10px;
-			filter:drop-shadow(7px -12px 50px pink);
+			filter:drop-shadow(7px -12px 50px #D3ADDC);
 		}
 	}
 }
