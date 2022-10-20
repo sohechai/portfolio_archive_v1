@@ -28,13 +28,17 @@ section.contactContainer {
 		letter-spacing: 4px;
 		font-family: 'Open sans';
 		font-size: 15px;
-		margin-top: 15px;
+		margin-top: 30px;
 		border-radius: 30px;
 		padding: 15px 25px;
-		border: none;
+		border: solid .5px #D3ADDC;
+		border-radius: 30px;
 		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-		background-color: white;
-		color: black;
+		background-color: transparent;
+		color: white;
+		&:hover {
+			background-color: rgba(211, 173, 220, .05);
+		};
 	}
 	.formDiv {
 		display: flex;
@@ -64,8 +68,10 @@ section.contactContainer {
 			caret-color: #D3ADDC;
 			color: white;
 			padding: 10px;
-			width: 95%;
-			height: 150px;
+			min-width: 95%;
+			max-width: 95%;
+			min-height: 15vh;
+			max-height: 15vh;
 			border-radius: 10px;
 			border: solid 1px white;
 			outline: none;

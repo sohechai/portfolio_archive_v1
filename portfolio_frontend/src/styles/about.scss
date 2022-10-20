@@ -16,7 +16,7 @@ section.about {
 	}
 	> p {
 		text-align: left;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.resume {
@@ -29,11 +29,11 @@ section.about {
 		padding: 15px 25px;
 		margin-bottom: 20px;
 		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		&:hover {
+			background-color: rgba(211, 173, 220, .05);
+		};
 		> a {
 			text-decoration: none;
 		}
-		:hover {
-			font-size: 21px;
-		};
 	}
 }

@@ -1,17 +1,16 @@
 import React from 'react'
 import WorkPresentation from '../components/WorkPresentation'
 import '../styles/work.scss'
-import arcaneImage from '../images/arcaneProject.png'
+import project2 from '../images/Project2.jpg'
+import portfolio from '../images/portfolio.png'
 
 function Work() {
-	console.log(arcaneImage)
+	console.log(portfolio)
   return (
 	<section className='workContainer'>
 		<h1>My work</h1>
 		<div className='workSquares'>
-			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react" />
-			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
-			<WorkPresentation image={arcaneImage} description="Personnal Arcane project from Netflix" abilities="react nestjs" />
+			<WorkPresentation image={portfolio} description="My personnal portfolio v.1.0" abilities="react nestjs" link="http://localhost:3000"/>
 		</div>
 	</section>
   )

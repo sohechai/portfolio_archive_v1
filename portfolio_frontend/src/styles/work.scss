@@ -18,10 +18,11 @@ section.workContainer {
 		justify-content: center;
 		align-items: center;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-		column-gap: 15%;
+		// gap: 20px;
+		column-gap: 20px;
 		width: 90%;
 		margin: auto;
+		padding: 30px;
 		@media (max-width: 1280px) {
 			grid-template-columns: repeat(2, 1fr);
 			columns: 1;
@@ -30,7 +31,7 @@ section.workContainer {
 		@media (max-width: 700px) {
 			grid-template-columns: repeat(1, 1fr);
 			columns: 1;
-			column-gap: 15%;
+			column-gap: 10%;
 		}
 	}
 
@@ -40,9 +41,11 @@ section.workContainer {
 		display: inline-block;
 		justify-content: center;
 		align-items: center;
-		width: 250px;
-		height: 500px;
+		text-align: center;
+		width: 300px;
+		height: auto;
 		margin: auto;
+		margin-bottom: 30px;
 		> a > p {
 			display: inline-flex;
 			align-items: center;
@@ -52,11 +55,20 @@ section.workContainer {
 			padding: 5px 10px 5px 10px;
 			margin-top: 5px;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
+			&:hover {
+				background-color: rgba(211, 173, 220, .05);
+			};
 		}
-		 img {
+		.imageDiv {
+			display: flex;
+			max-width: 300px;
+			max-height: 150px;
+		}
+		img {
 			display: block;
-			width: 250px;
-			height: 250px;
+			border-radius: 12px;
+			max-width: 100%;
+			max-height: 100%;
 			
 		}
 		>p {
@@ -85,7 +97,7 @@ section.workContainer {
 				text-align: center;
 				letter-spacing: 1px;
 				font-size: 14px;
-				margin: 3px 0 10px 0;
+				margin: 7px 0 10px 0;
 				margin-right: 10px;
 			}
 			

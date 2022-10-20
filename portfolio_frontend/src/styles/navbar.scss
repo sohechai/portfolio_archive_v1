@@ -4,16 +4,16 @@ section.navbar {
 	align-items: center;
 	justify-content: space-around;
 	text-align: center;
-	width: 70%;
+	width: 30%;
 	height: auto;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	display: inline-flex;
 	font-size: medium;
 	flex-direction: row;
 	.bubble {
 		display: flex;
-		width: 50%;
+		width: 70%;
 		height: 70px;
 		margin-bottom: 10px;
 		align-items: center;
@@ -23,16 +23,19 @@ section.navbar {
 		justify-content: center;
 		text-align: center;
 		@media (max-width: 1280px) {
-			width: 30vw;
+			width: 25vw;
+			margin: auto;
 		}
 		&.active {
-				background-color: rgba(211, 173, 220, .1);
-				background-image: none;
-				border-radius: 30px;
-		}	
-		a:hover::before{
-			width:10px;
-			filter:drop-shadow(7px -12px 50px #D3ADDC);
+			background-color: rgba(211, 173, 220, .05);
+			background-image: none;
+			border-radius: 30px;
+			color: #D3ADDC;
+		}
+		:hover {
+			background-color: rgba(211, 173, 220, .05);
+			background-image: none;
+			border-radius: 30px;
 		}
 	}
 }
