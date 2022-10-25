@@ -10,11 +10,11 @@ export class MailController {
 	@Post('send-email')
 	async sendEmail(@Body() payload) {
 
-		const text = "name = " + payload.name + "\nmessage = \n" + payload.message;
+		const text = "name : " + payload.name + "\nmail : " + payload.email + "\nmessage : \n" + payload.message;
 		const mail = {
 			to: 'sofia.hechaichi@gmail.com',
 			subject: 'Portfolio contact form email',
-			from: payload.email, // Fill it with your validated email on SendGrid account
+			from: 'sofia.hechaichi@gmail.com',
 			text: text,
 		};
 

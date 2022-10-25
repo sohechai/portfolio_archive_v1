@@ -1,7 +1,3 @@
-* {
-	cursor: none;
-}
-
 @font-face {
 	font-family: "Open Sans";
 	src: url("../font/Typewriter_Condensed_Demi.woff2") format("woff2"),
@@ -23,18 +19,11 @@ body {
 	// background: #2c2f33;
 	background-size: cover;
 	background-position: center;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	color: white;
 	font-family: 'Open sans';
 }
 
-.cursor {
-	background-color: #D3ADDC;
-	height: 32px;
-	width: 32px;
-	border-radius: 50%;
-	position: fixed;
-}
 .white-content {
 	background: white;
 	color: black;
@@ -111,11 +100,11 @@ section.home {
 	display: flex;
 	width: 70%;
 	height: 90%;
-	justify-content:baseline;
 	align-items: center;
 	flex-direction: column;
 	padding: 0;
 	margin: auto;
+	margin-top: 0;
 	@media (max-width: 1280px) {
 		width: 100%;
 	}
