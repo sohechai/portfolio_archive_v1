@@ -2,3 +2,8 @@
 	"vscode-pets.theme": "forest",
 	"vscode-pets.position": "explorer"
 }
+{
+  "eslint.workingDirectories": [
+    "./portfolio_frontend"
+  ]
+}
