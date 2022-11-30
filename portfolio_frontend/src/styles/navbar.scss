@@ -12,16 +12,17 @@ section.navbar {
 	font-size: larger;
 	flex-direction: row;
 	.bubble {
+		// background-color: red;
 		display: flex;
-		width: 70%;
+		width: 20vh;
 		height: 70px;
 		margin-bottom: 10px;
 		align-items: center;
 		text-align: left;
 		text-decoration: none;
-		align-items: center;
 		justify-content: center;
 		text-align: center;
+		// padding: 0 20% 0 20%;
 		@media (max-width: 1280px) {
 			width: 25vw;
 			margin: auto;
@@ -36,6 +37,7 @@ section.navbar {
 			background-color: rgba(211, 173, 220, .05);
 			background-image: none;
 			border-radius: 30px;
+			color: #D3ADDC;
 		}
 	}
 }

@@ -12,7 +12,7 @@ function WorkPresentation({ image, description, abilities, link }) {
 			<div className='abilities'>
 				{
 					abilitiesSep.map( (item) =>
-						<h1>{item}</h1> )
+						<h1 key={item}>{item}</h1> )
 				}
 			</div>
 			<p>{description}</p>

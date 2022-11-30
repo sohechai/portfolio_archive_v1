@@ -6,6 +6,7 @@ function About() {
 	return (
 		<section className='about'>
 			<h1>About me</h1>
+			<hr/>
 			<p>
 				Since I remember, I have always been with a computer, playing
 				video games and doing geek things. But life guided me to the

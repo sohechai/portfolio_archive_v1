@@ -5,12 +5,11 @@ import About from './pages/About';
 import Work from './pages/Work';
 import NavBar from './components/NavBar';
 import logo from './images/logo.svg'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ThemeContext, themes } from './components/contexts/themeContext';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Contact from './pages/Contact';
-import { motion } from 'framer-motion'
 
 function App() {
 	const [darkMode, setDarkMode] = useState(true);
