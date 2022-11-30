@@ -8,7 +8,7 @@ function Work() {
 	<section className='workContainer'>
 		<h1>My work</h1>
 		<div className='workSquares'>
-			<WorkPresentation image={portfolio} description="My personnal portfolio v.1.0" abilities="react" link="http://localhost:3000"/>
+			<WorkPresentation image={portfolio} description="My personnal portfolio v.1.0" abilities="react" link="https://sofiahechaichi.vercel.app/"/>
 		</div>
 	</section>
   )
