@@ -5,6 +5,7 @@ import '../styles/contact.scss'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
@@ -46,8 +47,12 @@ function Contact() {
 	// };
 
 	const [open, setOpen] = useState(false);
+	const [open2, setOpen2] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+
+	const handleOpen2 = () => setOpen2(true);
+	const handleClose2 = () => setOpen2(false);
 	const style = {
 		position: 'absolute',
 		top: '50%',
@@ -85,24 +90,36 @@ function Contact() {
 			<section className='footerContainer'>
 			<div className='footIcons'>
 				<h1>FIND ME ON</h1>
+				<br />
 				<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" rel="noreferrer">
 					<LinkedInIcon />
 				</a>
 				<a href="https://github.com/sohechai" target="_blank" rel="noreferrer">
 					<GitHubIcon />
 				</a>
+				<br/>
 				<button onClick={handleOpen}>
 					<MailIcon />
 				</button>
 				<Modal
 					open={open}
 					onClose={handleClose}
-					// aria-labelledby="modal-modal-title"
-					// aria-describedby="modal-modal-description"
 					disableEnforceFocus
 				>
 					<Box sx={style}>
 							sofia.hechaichi@gmail.com
+					</Box>
+				</Modal>
+				<button onClick={handleOpen2}>
+					<LocalPhoneIcon />
+				</button>
+				<Modal
+					open={open2}
+					onClose={handleClose2}
+					disableEnforceFocus
+				>
+					<Box sx={style}>
+							(+33)06 10 39 63 07
 					</Box>
 				</Modal>
 			</div>
