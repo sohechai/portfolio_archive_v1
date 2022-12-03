@@ -20,6 +20,11 @@ html {
     outline: none;
 }
 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 body {
 	position: relative;
 	height: 100%;
