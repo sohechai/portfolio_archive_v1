@@ -1,23 +1,27 @@
 import React from 'react'
 import '../styles/about.scss'
-import resume from '../cv/CV_Sofia_Hechaichi.pdf'
+import resumeFR from '../cv/CV_Sofia_Hechaichi.pdf'
+import resumeEN from '../cv/CV_Sofia_Hechaichi_EN.pdf'
 
 function About() {
 	return (
 		<section className='about'>
 			<h1>About me</h1>
 			<p>
-				Since I remember, I have always been with a computer, playing
-				video games and doing geek things. But life guided me to the
-				profession of nurse. <br /><br />
-				After 2 years I decided to reorient myself as a developer.
-				In 2019, I joined 42 school. This is where it all started.
-				I started to love creating with a keyboard, especially website. <br /><br />
-				This is why I am looking for an internship of 4 or 6 months as  
-				soon as possible. This will allow me to learn and evolve with the help 
-				of senior developper. 
+				Ever since I can remember, I have always been fascinated by computers, 
+				playing video games and doing geeky things. However, life led me to pursue 
+				a career as a nurse.
+				<br /><br />
+				After two years, I decided to reorient my career and become a developer. 
+				In 2019, I enrolled in ecole 42, where my passion for creating websites 
+				with a keyboard truly began.
+				<br /><br />
+				That is why I am currently seeking an internship of 4 or 6 months as soon 
+				as possible. This opportunity will allow me to learn and grow with the guidance 
+				of experienced developers.
 			</p>
-			<a className='resume' href={resume} download="resume_Sofia_Hechaichi">DOWNLOAD MY RESUME</a>
+			<a className='resume' href={resumeEN} download="resume_Sofia_Hechaichi_EN">DOWNLOAD MY RESUME (EN)</a>
+			<a className='resume' href={resumeFR} download="resume_Sofia_Hechaichi_FR">DOWNLOAD MY RESUME (FR)</a>
 		</section>
 	)
 }

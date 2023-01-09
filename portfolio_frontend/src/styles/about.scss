@@ -11,16 +11,18 @@ section.about {
 	> h1 {
 		text-align: left;
 		padding-bottom: 10px;
+		margin-bottom: 10px;
 		text-transform: uppercase;
 		border-bottom: 0.1px solid white;
 	}
 	> p {
 		text-align: left;
 		font-size: 18px;
+		margin-bottom: 2rem;
 	}
 
 	.resume {
-		margin-top: 3rem;
+		margin: 10px 10px 0 10px;
 		display: inline-block;
 		text-decoration: none;
 		font-size: 20px;
