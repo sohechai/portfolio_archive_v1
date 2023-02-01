@@ -65,7 +65,7 @@ function App() {
 						<Route path="contact" element={<Contact />} />
 					</Routes>
 					<div className='signature'>
-						<p>&#169; 2023 Sofia Hechaïchi. Made with ReactJS.</p>
+						<p>Sofia Hechaïchi &#169; 2023. Made with ReactJS.</p>
 					</div>
 				</section>
 			</section>
