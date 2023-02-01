@@ -82,6 +82,35 @@ section.pageContents {
 	}
 }
 
+@keyframes bounce {
+	0% {
+		transform: translateY(-40px);
+		opacity:0;
+	}
+
+	50% {
+		transform: translateY(0px);
+		opacity:1; 
+	}
+	51% {
+		transform: scaleY(0.5);	
+	}
+
+	90% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
 section.header {
 	position: relative;
 	display: flex;
@@ -89,13 +118,36 @@ section.header {
 	align-items: center;
 	text-align: center;
 	margin: auto;
-	padding: 50px;
+
 	.logo {
-		width: 40px;
-		height: auto;
-		@media (max-width: 1280px) {
-			width: 30px;
-			height: auto;
+		width: 80px;
+		height: 100px;
+
+		.letterS {
+			stroke-dasharray: 1300;
+			stroke-dashoffset: 1300;
+			animation: draw .5s linear forwards ;
+			animation-delay: 2s;
+		}
+		
+		.letterH {
+			stroke-dasharray: 1200;
+			stroke-dashoffset: 1200;
+			animation: draw .5s linear forwards ;
+			animation-delay: 2.5s;
+		}
+
+		.ball {
+			background-color: lightpink;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			position: relative;
+			margin: -25px 0 0px 75px;
+			animation: bounce 1s;
+			animation-delay: 3s;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;
 		}
 	}
 
@@ -144,7 +196,7 @@ section.home {
 			border-right: .14em solid #D3ADDC;
 			white-space: nowrap;
 			animation:
-			  typing 4s steps(26, end) forwards,
+			  typing 2s steps(26, end) forwards,
 			  blinking 1.5s infinite;
 			width: 0;
 		}
