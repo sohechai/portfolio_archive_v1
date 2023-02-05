@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import '../styles/contact.scss'
-// import axios from 'axios';
-// import toast, { Toaster } from 'react-hot-toast';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
@@ -10,42 +8,6 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
 function Contact() {
-	// const handleSubmit = async (e) => {
-	// 	e.preventDefault();
-	// 	const { name, email, message } = e.target.elements;
-	// 	let details = {
-	// 		name: name.value,
-	// 		email: email.value,
-	// 		message: message.value,
-	// 	};
-
-	// 	axios.post('http://localhost:4000/mail/send-email', { name: details.name, email: details.email, message: details.message })
-	// 		.then((res) =>
-	// 			toast("message sent, thank you !",
-	// 				{
-	// 					icon: '✅',
-	// 					style: {
-	// 						borderRadius: '10px',
-	// 						background: '#333',
-	// 						color: '#fff',
-	// 					},
-	// 				}
-	// 			)
-	// 		)
-	// 		.catch((error) =>
-	// 			toast("error, please check your email address.",
-	// 				{
-	// 					icon: '❌',
-	// 					style: {
-	// 						borderRadius: '10px',
-	// 						background: '#333',
-	// 						color: '#fff',
-	// 					},
-	// 				}
-	// 			)
-	// 		);
-	// };
-
 	const [open, setOpen] = useState(false);
 	const [open2, setOpen2] = useState(false);
 	const handleOpen = () => setOpen(true);
@@ -69,25 +31,7 @@ function Contact() {
 
 	return (
 		<section className='contactContainer'>
-			{/* <Toaster /> */}
 			<h1>CONTACT ME</h1>
-			{/* <form onSubmit={handleSubmit}>
-				<div className='formDiv'>
-					<label htmlFor="name" />
-					<input placeholder='Name' type="text" id="name" required />
-				</div>
-				<div className='formDiv'>
-					<label htmlFor="email" />
-					<input placeholder='Email' type="email" id="email" required />
-				</div>
-				<div className='formDiv'>
-					<label htmlFor="message" />
-					<textarea placeholder='Message' id="message" required />
-				</div>
-				<button type="submit">send</button>
-			</form> */}
-			{/* <Footer /> */}
-			<section className='footerContainer'>
 			<div className='footIcons'>
 				<h1>FIND ME ON</h1>
 				<br />
@@ -97,7 +41,7 @@ function Contact() {
 				<a href="https://github.com/sohechai" target="_blank" rel="noreferrer">
 					<GitHubIcon />
 				</a>
-				<br/>
+				<br />
 				<button onClick={handleOpen}>
 					<MailIcon />
 				</button>
@@ -107,7 +51,7 @@ function Contact() {
 					disableEnforceFocus
 				>
 					<Box sx={style}>
-							sofia.hechaichi@gmail.com
+						sofia.hechaichi@gmail.com
 					</Box>
 				</Modal>
 				<button onClick={handleOpen2}>
@@ -119,11 +63,10 @@ function Contact() {
 					disableEnforceFocus
 				>
 					<Box sx={style}>
-							(+33)06 10 39 63 07
+						(+33)06 10 39 63 07
 					</Box>
 				</Modal>
 			</div>
-		</section>
 		</section>
 	)
 }

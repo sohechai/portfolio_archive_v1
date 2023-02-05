@@ -6,14 +6,14 @@ function Home() {
 	return (
 		<section className='home'>
 			<div className='hello'>
-			<div className='text'>
-			<h1>
-				Hello, I’m Sofia.
-			</h1>
-			<h1 className='typewrite-effect'>
-				I’m a web <span style={{color: '#D3ADDC'}}>&#60; developer /&#62;</span> .
-			</h1>
-			</div>
+				<div className='text'>
+					<h1>
+						I’m Sofia.
+					</h1>
+					<h1 className='typewrite-effect'>
+						I’m a web <span style={{ color: '#7289da' }}>&#60; developer /&#62;</span> .
+					</h1>
+				</div>
 				<div className='box'>
 					<h1>nice to meet you !</h1>
 				</div>

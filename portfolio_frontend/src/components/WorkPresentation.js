@@ -11,8 +11,8 @@ function WorkPresentation({ image, description, abilities, link }) {
 			</div>
 			<div className='abilities'>
 				{
-					abilitiesSep.map( (item) =>
-						<h1 key={item}>{item}</h1> )
+					abilitiesSep.map((item) =>
+						<h1 key={item}>{item}</h1>)
 				}
 			</div>
 			<p>{description}</p>

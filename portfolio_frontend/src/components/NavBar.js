@@ -11,7 +11,7 @@ function NavBar() {
 					to="/about"
 					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
-					ABOUT
+					About
 				</NavLink>
 			</div>
 			<div className='bubble'>
@@ -19,7 +19,7 @@ function NavBar() {
 					to="/work"
 					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
-					WORK
+					Work
 				</NavLink>
 			</div>
 			<div className='bubble'>
@@ -27,7 +27,7 @@ function NavBar() {
 					to="/Contact"
 					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
 				>
-					CONTACT
+					Contact
 				</NavLink>
 			</div>
 		</section>

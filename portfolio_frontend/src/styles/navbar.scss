@@ -1,43 +1,33 @@
 section.navbar {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	text-align: center;
-	width: 30%;
-	height: auto;
-	margin: auto;
-	padding: 0;
+	border-radius: 25px;
 	display: inline-flex;
-	font-size: larger;
-	flex-direction: row;
+	background-color: var(--border-color);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	align-items: center;
+	margin: 24px 0 64px 0;
+	
+
 	.bubble {
-		// background-color: red;
 		display: flex;
-		width: 20vh;
-		height: 70px;
-		margin-bottom: 10px;
-		align-items: center;
-		text-align: left;
-		text-decoration: none;
 		justify-content: center;
-		text-align: center;
-		// padding: 0 20% 0 20%;
-		@media (max-width: 1280px) {
-			width: 25vw;
-			margin: auto;
-		}
-		&.active {
-			background-color: rgba(211, 173, 220, .05);
-			background-image: none;
-			border-radius: 30px;
-			color: #D3ADDC;
-		}
+		border-radius: 25px;
+		padding: 4px 16px 4px 16px;
+		position: relative;
+
 		:hover {
-			background-color: rgba(211, 173, 220, .05);
-			background-image: none;
-			border-radius: 30px;
-			color: #D3ADDC;
+			background-color: #ffffff;
+			border-radius: 25px;
+			color: black;
+			cursor: pointer;
+			transition: .2s ease;
+		}
+
+		&.active {
+			background-color: #ffffff;
+			border-radius: 25px;
+			color: black;
+			padding: 4px 16px 4px 16px;
 		}
 	}
 }
