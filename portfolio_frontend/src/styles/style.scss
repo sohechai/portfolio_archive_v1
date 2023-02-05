@@ -306,6 +306,12 @@ section.home {
 				width: calc(100% - 10px);
 				height: auto;
 				margin: 5px;
+				::-webkit-media-controls {
+					display: none !important;
+				}
+				::-moz-controls {
+					display: none !important;
+				}
 			}
 		}
 	}

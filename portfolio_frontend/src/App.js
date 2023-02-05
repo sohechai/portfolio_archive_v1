@@ -4,18 +4,39 @@ import { Routes, Route, BrowserRouter, NavLink } from "react-router-dom"
 import About from './pages/About';
 import Work from './pages/Work';
 import NavBar from './components/NavBar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Contact from './pages/Contact';
 
 function App() {
-	const [darkMode, setDarkMode] = useState(true);
+	const initialDarkMode = localStorage.getItem("darkMode") === "true" ? false : true;
+	
+	// if (!localStorage.getItem("darkMode")) {
+	// 	localStorage.setItem("darkMode", initialDarkMode.toString());
+	// }
+	const [darkMode, setDarkMode] = useState(initialDarkMode);
 
 	const setThemeMode = () => {
 		setDarkMode(!darkMode);
-		darkMode ?
-			document.documentElement.setAttribute('data-theme', 'light')
-			: document.documentElement.setAttribute('data-theme', 'dark');
+		if (darkMode === true) {
+			document.documentElement.setAttribute('data-theme', 'dark')
+			localStorage.setItem('darkMode', 'true');
+		} else {
+			document.documentElement.setAttribute('data-theme', 'light');
+			localStorage.setItem('darkMode', 'false');
+		}
 	}
+
+	useEffect(() => {
+		if (darkMode === true) {
+			document.documentElement.setAttribute('data-theme', 'dark')
+		} else {
+			document.documentElement.setAttribute('data-theme', 'light');
+		}
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem("darkMode", darkMode.toString());
+	}, [darkMode]);
 
 	return (
 		<BrowserRouter>
