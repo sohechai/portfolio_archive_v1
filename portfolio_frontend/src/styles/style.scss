@@ -3,25 +3,25 @@
 	--primary-color: #7289da;
 	--font-color: #ffffff;
 	--bg-color: #333234;
-	--border-color: rgba(255, 255, 255, .25);
+	--border-color: rgba(255, 255, 255, .15);
 	--secondary-color: #7289da;
-	--toggle-color: #cdd6de;
+	--toggle-color: #eef7ff;
 }
 
 [data-theme="dark"] {
 	--primary-color: #7289da;
 	--font-color: #ffffff;
 	--bg-color: #333234;
-	--border-color: rgba(255, 255, 255, .25);
+	--border-color: rgba(255, 255, 255, .15);
 	--secondary-color: #7289da;
-	--toggle-color: #cdd6de;
+	--toggle-color: #eef7ff;
 }
 
 [data-theme="light"] {
 	--primary-color: #7289da;
 	--font-color: #000000;
-	--bg-color: #cdd6de;
-	--border-color: rgba(0, 0, 0, .25);
+	--bg-color: #eef7ff;
+	--border-color: rgba(0, 0, 0, .15);
 	--secondary-color: #7289da;
 	--toggle-color: #333234;
 }
