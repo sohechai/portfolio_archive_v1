@@ -53,13 +53,9 @@
 	font-display: swap;
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 100;
-	src: url('../font/poppins-v20-latin/poppins-v20-latin-100.eot');
-	src: url('../font/poppins-v20-latin/poppins-v20-latin-100.eot?#iefix') format('embedded-opentype'),
-		url('../font/poppins-v20-latin/poppins-v20-latin-100.woff2') format('woff2'),
-		url('../font/poppins-v20-latin/poppins-v20-latin-100.woff') format('woff'),
-		url('../font/poppins-v20-latin/poppins-v20-latin-100.ttf') format('truetype'),
-		url('../font/poppins-v20-latin/poppins-v20-latin-100.svg#Poppins') format('svg');
+	font-weight: 200;
+	src: url('../font/poppins-v20-latin/poppins-v20-latin-200.woff2') format('woff2'),
+		url('../font/poppins-v20-latin/poppins-v20-latin-200.woff') format('woff'),
 }
 
 ::-webkit-scrollbar {
