@@ -49,23 +49,17 @@
 	box-sizing: border-box;
 }
 
-// @font-face {
-// 	font-display: swap;
-// 	font-family: 'Poppins';
-// 	font-style: normal;
-// 	font-weight: 200;
-// 	src: url('../font/poppins-v20-latin/poppins-v20-latin-200.woff2') format('woff2'),
-// 		url('../font/poppins-v20-latin/poppins-v20-latin-200.woff') format('woff'),
-// }
-
 ::-webkit-scrollbar {
 	width: 0;
 	background: transparent;
 }
 
+
 html,
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
 	position: relative;
 	min-height: 100vh;
 	min-width: 100vw;
@@ -79,7 +73,6 @@ body {
 	background-size: cover;
 	background-position: center;
 	color: var(--font-color);
-	font-family: 'Poppins';
 	transition: 1s ease;
 
 	a {
@@ -87,6 +80,10 @@ body {
 		color: var(--font-color);
 		transition: 1s ease;
 	}
+}
+
+h1 {
+	font-weight: 200;
 }
 
 section.container {
@@ -290,7 +287,6 @@ section.home {
 		.videoContainer {
 			background-color: var(--primary-color);
 			border: 1px solid var(--primary-color);
-			// margin-top: 10px;
 			width: 40rem;
 			height: 23rem;
 
@@ -303,9 +299,11 @@ section.home {
 				width: calc(100% - 10px);
 				height: auto;
 				margin: 5px;
+
 				::-webkit-media-controls {
 					display: none !important;
 				}
+
 				::-moz-controls {
 					display: none !important;
 				}
