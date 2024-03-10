@@ -6,30 +6,24 @@ function NavBar() {
 
 	return (
 		<section className='navbar'>
-			<div className='bubble'>
-				<NavLink
-					to="/about"
-					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
-				>
-					About
-				</NavLink>
-			</div>
-			<div className='bubble'>
-				<NavLink
-					to="/work"
-					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
-				>
-					Work
-				</NavLink>
-			</div>
-			<div className='bubble'>
-				<NavLink
-					to="/Contact"
-					className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
-				>
-					Contact
-				</NavLink>
-			</div>
+			<NavLink
+				to="/about"
+				className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
+			>
+				<span>About</span>
+			</NavLink>
+			<NavLink
+				to="/work"
+				className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
+			>
+				<span>Work</span>
+			</NavLink>
+			<NavLink
+				to="/Contact"
+				className={({ isActive }) => (isActive ? 'bubble active' : 'bubble inactive')}
+			>
+				<span> Contact</span>
+			</NavLink>
 		</section>
 	)
 }
